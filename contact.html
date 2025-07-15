@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Tech Club</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="header">
+    <div class="tc_header">
+      <h1>Tech Club</h1>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      &#9776;
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="core.html">TC Core</a>
+      <a href="legacy.html">Legacy</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="photo_gallery.html">Photo Gallery</a>
+      <a href="club_portfolio.html">Club Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+  
+  <div class="contact-container">
+    <div class="contact-header">
+      <h1>📬 Contact Us</h1>
+      <p>Have questions, ideas or collab requests? We're listening.</p>
+    </div>
+
+    <form class="contact-form" action="https://formsubmit.co/itsharshit860@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+      <!-- FormSubmit settings -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_next" value="https://example.com/thank-you.html"> <!-- optional redirect -->
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <div class="contact-socials">
+      <a href="https://github.com/Ista2000/DPSRPKTechClubOfficial" target="_blank">
+        <img src="./github.png" alt="GitHub">
+      </a>
+      <a href="https://www.youtube.com/@techclubdpsrpk" target="_blank">
+        <img src="./youtube.png" alt="YouTube">
+      </a>
+      <a href="https://medium.com/@techclubdpsrpk" target="_blank">
+        <img src="./medium.png" alt="Medium">
+      </a>
+    </div>
+  </div>
+</body>
+</html>

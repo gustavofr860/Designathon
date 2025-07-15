@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Club Portfolio | Tech Club DPS Ruby Park</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <style>
+    /* Base Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #0f0f0f;
+      color: #fff;
+      margin-top: 5rem;
+    }
+
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      border-bottom: 1px solid #f9c80e30;
+    }
+
+    .tc_header h1 {
+      color: #f9c80e;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .navbar {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: white;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .navbar a:hover {
+      color: #f9c80e;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 2rem;
+      color: #f9c80e;
+      cursor: pointer;
+    }
+
+    /* Responsive Navbar */
+    @media (max-width: 768px) {
+      .navbar {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #111;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+        padding: 1rem 2rem;
+      }
+
+      .navbar.active {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+
+    /* Portfolio Styles */
+    .portfolio-header {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    .portfolio-header h1 {
+      font-size: 2.8rem;
+      color: #f9c80e;
+    }
+
+    .portfolio-header p {
+      color: #aaa;
+      font-size: 1.1rem;
+      margin-top: 0.5rem;
+    }
+
+    .event-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .event-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid #f9c80e25;
+      border-radius: 14px;
+      overflow: hidden;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px #f9c80e10;
+    }
+
+    .event-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #f9c80e60;
+    }
+
+    .event-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 1px solid #f9c80e25;
+    }
+
+    .event-info {
+      padding: 1rem;
+    }
+
+    .event-info h2 {
+      font-size: 1.5rem;
+      color: #f9c80e;
+      margin-bottom: 0.5rem;
+    }
+
+    .event-info p {
+      font-size: 0.95rem;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="tc_header">
+      <h1>Tech Club</h1>
+    </div>
+
+    <div class="hamburger" id="hamburger">&#9776;</div>
+
+    <nav class="navbar" id="navbar">
+      <a href="index.html">Home</a>
+      <a href="core.html">TC Core</a>
+      <a href="legacy.html">Legacy</a>
+      <a href="announcements.html">Announcements</a>
+      <a href="photo_gallery.html">Photo Gallery</a>
+      <a href="portfolio.html">Club Portfolio</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <section class="portfolio-header">
+    <h1>Club Portfolio</h1>
+    <p>A glimpse into our journey of innovation and tech excellence – 2024 edition.</p>
+  </section>
+
+  <section class="event-grid">
+    <div class="event-card">
+      <img src="event_ai_expo.jpeg" alt="AI Expo">
+      <div class="event-info">
+        <h2>AI Expo</h2>
+        <p>Exploring the cutting edge of artificial intelligence with live demos and speaker panels.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="event_robotics.jpeg" alt="Robotics Showdown">
+      <div class="event-info">
+        <h2>Robotics Showdown</h2>
+        <p>Teams built and battled custom robots in an arena filled with tech and adrenaline.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="event_design.jpeg" alt="UI/UX Sprint">
+      <div class="event-info">
+        <h2>UI/UX Sprint</h2>
+        <p>A 24-hour marathon where design met function—prototypes came to life.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="event_hacknight.jpeg" alt="HackNight 2024">
+      <div class="event-info">
+        <h2>HackNight 2024</h2>
+        <p>An all-nighter filled with caffeine, code, and creativity as students built wild ideas.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="event_arvr.jpeg" alt="AR/VR Showcase">
+      <div class="event-info">
+        <h2>AR/VR Showcase</h2>
+        <p>Students stepped into immersive realities with interactive projects and guided demos.</p>
+      </div>
+    </div>
+
+    <div class="event-card">
+      <img src="event_green.jpeg" alt="GreenTech Pitch">
+      <div class="event-info">
+        <h2>GreenTech Pitch</h2>
+        <p>Innovative solutions to environmental challenges through technology and smart systems.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
