@@ -5,8 +5,6 @@ html{
     font-family: Poppins;
 }
 
-/* HOME */
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 * {
@@ -141,8 +139,6 @@ header.header {
   font-size: 0.9rem;
   margin-top: 2rem;
 }
-
-/* === RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .hamburger {
     display: block;
@@ -191,7 +187,6 @@ header.header {
 }
 
 
-/* CORE MEMBERS */
 
 .header_core h1{
     color: rgb(221, 188, 0);
@@ -287,7 +282,6 @@ header.header {
   margin-bottom: 0.5rem;
 }
 
-/* === LEGACY PAGE STYLE === */
 .legacy-section {
   background: #0f0f0f;
   padding: 4rem 2rem;
